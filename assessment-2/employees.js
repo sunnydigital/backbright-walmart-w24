@@ -88,7 +88,7 @@ class Manager extends Employee {
     }
 
     getEmployees() {
-        console.log(`${this.name} manages ${this.employees}`);
+        console.log(`${this.name} manages ${this.employees.join(', ')}`);
     }
 
     addEmployee(emp) {
