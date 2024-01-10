@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Position Demo</title>
+
+    <style>
+    
+    body {
+        font-size: 20px;
+    }
+
+    .absolute {
+      position: absolute;
+      border: 2px solid red;
+      right: 0px;
+      top: 20px;
+      width: 150px;
+    }
+
+    .relative {
+      position: relative;
+      border: 2px solid blue;
+      left: 10px;
+      top: 10px;
+      width: 100px;
+    }
+
+    #fixed-container {
+      position: fixed;
+      border: 2px solid green;
+      left: 200px;
+      top: 150px;
+      width: 400px;
+      height: 100px;
+    }
+
+    #static-container {
+      border: 2px solid black;
+      width: 400px;
+      height: 100px;
+      /* top, bottom, left, right will do nothing */
+    }
+
+    #static {
+      border: 2px solid black;
+      width: 100px;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="static-container">
+        <div class="absolute">Absolute (outside of parent!)</div>
+        <div id="static">Static</div>
+        <div class="relative">Relative</div>
+    </div>
+      
+    <div id="fixed-container">
+       <div class="absolute">Absolute</div>
+       <div class="relative">Relative</div>
+    </div>
+  </body>
+</html>
+
+
