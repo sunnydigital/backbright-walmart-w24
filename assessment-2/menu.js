@@ -153,9 +153,15 @@ const foodArr = [
 
 //CODE HERE
 
-const vegetarianCallback = () => {}
+const vegetarianCallback = (foodArray) => {
+    for ( item in foodArray ) {
+        if ( item.tags.includes("vegetarian") ) {
+            return item
+        }
+    }
+}
 
-const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter(vegetarianCallback)
 
 
 
@@ -195,6 +201,16 @@ const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
 //CODE HERE
 
+function filterByProperty(property, number) {
+    let filteredArray = []
+
+    for ( item in foodArray ) {
+        if ( item[property] > number ) {
+            filteredArray.push(item) 
+        }
+    }
+    return filteredArray
+}
 
 /*
     Invoke the `filterByProperty` function, passing
@@ -204,3 +220,5 @@ const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 */
 
 //CODE HERE
+
+ console.log(filteredByProperty("price", 12))

@@ -35,7 +35,9 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+const reduceCallback = (accumulator, currentValue) => {accumulator + currentValue}
+
+const summedPrice = cart.reduce(reduceCallback)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -55,7 +57,11 @@ const cart = [
 
 //CODE HERE
 
+function calcFinalPrice(cartTotal, couponValue, tax) {
+    newTotal = cartTotal * (1 + tax) - couponValue
 
+    return newTotal
+}
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -79,7 +85,11 @@ const cart = [
 
 /*
     TEXT ANSWER HERE
-
+    Name: The name of the customer in the "First, Last" format
+    Address: The address of the customer in the "XXXX Street Name, City, State, Zip"
+    Points: The number of reward points the customer has
+    Coupons: A list of coupon values that the customer has had applied
+    Favorite Items: A list of favored items that the customer likes to order: i.e. ["pizza", "fruits"]
 */
 
 /*
@@ -88,3 +98,11 @@ const cart = [
 */
 
 //CODE HERE
+
+const sunnySon = {
+    name: "Sunny Son",
+    address: "1234 Second Ave, New York, NY, 10004",
+    points: 12,
+    coupons: [10, 15, 20],
+    favoriteItems: ["pizza", "croissants", "steak", "spam musubi"]
+}
