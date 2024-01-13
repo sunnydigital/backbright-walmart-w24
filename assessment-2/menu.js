@@ -32,14 +32,7 @@
 
 //CODE HERE
 
-let pizza = {
-    name: 'Pepperoni',
-    price: 15.99,
-    category: 'Entree',
-    popularity: 5,
-    rating: 4.5,
-    tags: ['gluten-free', 'kids']
-};
+
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -51,7 +44,6 @@ let pizza = {
 
 //CODE HERE
 
-console.log(pizza.popularity);
 
 /*
     Second, log the second tag in your pizza's
@@ -62,7 +54,6 @@ console.log(pizza.popularity);
 
 //CODE HERE
 
-console.log(pizza.tags[1]);
 
 /*
     Third, destructure the price off of the
@@ -73,8 +64,6 @@ console.log(pizza.tags[1]);
 
 //CODE HERE
 
-let { price } = pizza;
-console.log(price);
 
 /*
     Fourth, and last, destructure the category
@@ -85,8 +74,6 @@ console.log(price);
 
 //CODE HERE
 
-let { category } = pizza;
-console.log(category);
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -102,40 +89,7 @@ console.log(category);
 
 //CODE HERE
 
-let foodArr = [
-    {
-        name: 'Cheese Pizza',
-        price: 14.99,
-        category: 'Entree',
-        popularity: 4,
-        rating: 4.2,
-        tags: ['vegetarian', 'kids']
-    },
-    {
-        name: 'Hawaiian Pizza',
-        price: 16.99,
-        category: 'Entree',
-        popularity: 3,
-        rating: 4.0,
-        tags: ['pineapple', 'ham']
-    },
-    {
-        name: 'Veggie Pizza',
-        price: 15.99,
-        category: 'Entree',
-        popularity: 2,
-        rating: 4.1,
-        tags: ['vegetarian', 'healthy']
-    },
-    {
-        name: 'Meat Lovers Pizza',
-        price: 17.99,
-        category: 'Entree',
-        popularity: 5,
-        rating: 4.8,
-        tags: ['meat', 'protein']
-    }
-];
+
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -155,7 +109,9 @@ let foodArr = [
 
 //CODE HERE
 
-const filteredFood = foodArr.filter(food => food.tags.includes('vegetarian'));
+// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+
+
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -193,10 +149,6 @@ const filteredFood = foodArr.filter(food => food.tags.includes('vegetarian'));
 
 //CODE HERE
 
-function filterByProperty(property, number) {
-    let filteredArray = foodArr.filter(food => food[property] > number);
-    return filteredArray;
-}
 
 /*
     Invoke the `filterByProperty` function, passing
@@ -206,6 +158,3 @@ function filterByProperty(property, number) {
 */
 
 //CODE HERE
-
-console.log(filterByProperty('rating', 4.5));
-console.log(filterByProperty('price', 15));

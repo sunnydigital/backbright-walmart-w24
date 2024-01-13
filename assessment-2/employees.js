@@ -21,16 +21,7 @@
 
 //CODE HERE
 
-class Employee {
-    constructor(name, shifts) {
-        this.name = name;
-        this.shifts = shifts;
-    }
 
-    getSchedule() {
-        console.log(`${this.name} works on ${this.shifts}`);
-    }
-}
 
 /*
     Create a new instance of your class.
@@ -44,8 +35,6 @@ class Employee {
 
 //CODE HERE
 
-let empOne = new Employee("Jess", "weekday mornings");
-
 /*
     Call the `getSchedule` method on the
     `empOne` instance.
@@ -54,7 +43,7 @@ let empOne = new Employee("Jess", "weekday mornings");
 //CODE HERE
 
 
-empOne.getSchedule();
+
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -81,20 +70,7 @@ empOne.getSchedule();
 
 //CODE HERE
 
-class Manager extends Employee {
-    constructor(name, shifts, employees) {
-        super(name, shifts);
-        this.employees = employees;
-    }
 
-    getEmployees() {
-        console.log(`${this.name} manages ${this.employees.join(', ')}`);
-    }
-
-    addEmployee(emp) {
-        this.employees.push(emp);
-    }
-}
 
 /*
     Create a new instance of your class.
@@ -109,7 +85,6 @@ class Manager extends Employee {
 
 //CODE HERE
 
-let manager = new Manager('Winston', 'weekday afternoons', ['Cece', 'Schmidt']);
 
 /*
     Call the `getEmployees` method on the
@@ -117,8 +92,6 @@ let manager = new Manager('Winston', 'weekday afternoons', ['Cece', 'Schmidt']);
 */
 
 //CODE HERE
-
-manager.getEmployees();
 
 /*
     Call the `addEmployee` method on the 
@@ -128,8 +101,6 @@ manager.getEmployees();
 
 //CODE HERE 
 
-manager.addEmployee('Coach');
-
 /*
     Call the `getEmployees` method on the
     `manager` varible again to confirm 
@@ -137,5 +108,3 @@ manager.addEmployee('Coach');
 */
 
 //CODE HERE
-
-manager.getEmployees();

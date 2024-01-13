@@ -35,7 +35,7 @@ const cart = [
 
 //CODE HERE
 
-const summedPrice = cart.reduce((accumulator, foodItem) => accumulator + foodItem.price, 0);
+// const summedPrice = cart.reduce(/* CALLBACK HERE */)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -55,9 +55,7 @@ const summedPrice = cart.reduce((accumulator, foodItem) => accumulator + foodIte
 
 //CODE HERE
 
-function calcFinalPrice(cartTotal, couponValue, tax) {
-    return (cartTotal * (1 + tax)) - couponValue;
-}
+
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -81,9 +79,7 @@ function calcFinalPrice(cartTotal, couponValue, tax) {
 
 /*
     TEXT ANSWER HERE
-    I chose to have the customer's name, phone number, address, and email address as properties. 
-    These properties were chosen because they are all things that a restaurant would need to know about a customer.
-    I believe they should be strings because they are all text based information. 
+
 */
 
 /*
@@ -92,33 +88,3 @@ function calcFinalPrice(cartTotal, couponValue, tax) {
 */
 
 //CODE HERE
-
-const john_doe = {
-    name: 'John Doe',
-    phoneNumber: '123-456-7890',
-    address: {
-        street: '1234 Some Street',
-        city: 'Some City',
-        state: 'Some State',
-        zipCode: '12345'
-    },
-    email: 'john.doe@somewebsite.com',
-    orderHistory: [
-        {
-            name: 'pizza', 
-            price: 9.99,
-            date: '01/01/2020'
-        }, 
-        {
-            name: 'pasta', 
-            price: 8.99,
-            date: '01/01/2021'
-        }, 
-        {
-            name: 'salad', 
-            price: 7.99,
-            date: '01/01/2022'
-        }
-    ],
-    rewardsPoints: 1234
-}
