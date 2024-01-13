@@ -32,7 +32,14 @@
 
 //CODE HERE
 
-
+const pineapplePizza = {
+    name: 'Pineapple Pizza',
+    price: '10',
+    category: 'Entree',
+    popularity: '4.5',
+    rating: '4',
+    tags: ['Fruit', 'Popular', 'Controversial']
+}
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -44,6 +51,7 @@
 
 //CODE HERE
 
+console.log(pineapplePizza.rating)
 
 /*
     Second, log the second tag in your pizza's
@@ -54,6 +62,7 @@
 
 //CODE HERE
 
+console.log(pineapplePizza.tags[1])
 
 /*
     Third, destructure the price off of the
@@ -63,7 +72,12 @@
 */
 
 //CODE HERE
+// used https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
 
+let { name, price, ...restOne } = pineapplePizza
+const newPineapplePizza = { name, restOne }
+
+console.log(price)
 
 /*
     Fourth, and last, destructure the category
@@ -73,7 +87,8 @@
 */
 
 //CODE HERE
-
+let { category } = newPineapplePizza
+console.log(category)
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -89,7 +104,36 @@
 
 //CODE HERE
 
-
+const foodArr = [
+    {
+        name:"Flan",
+        price: "10",
+        popularity: "4",
+        rating: "4",
+        tags:["spanish", "dessert", "vegetarian"]
+    },
+    {
+        name:"Steak",
+        price: "100",
+        popularity: "3",
+        rating: "4.5",
+        tags:["native", "fresh", "meat"]
+    },
+    {
+        name:"Spam Musubi",
+        price:"10",
+        popularity:"4.5",
+        rating:"4",
+        tags:["hawaii", "casual", "meat"]
+    },
+    {
+        name:"Oysters Rockefeller",
+        price: "20",
+        popularity: "4",
+        rating: "3",
+        tags:["natural", "seafood", "pescetarian"]
+    },
+]
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -109,7 +153,9 @@
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const vegetarianCallback = () => {}
+
+const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
 
 
