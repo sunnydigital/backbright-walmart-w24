@@ -36,3 +36,26 @@ input {
 img {
 	max-width: 300px;
 }
+
+.title {
+	background-color: yellow;
+}
+
+.hello-world {
+	background-color: aqua;
+}
+
+.checkbox-google {
+    width: 20px;
+	height: 20px;
+}
+
+.checkbox-a-friend {
+    width: 10px;
+	height: 10px;
+}
+
+.checkbox-other {
+    width: 20px;
+	height: 20px;
+}

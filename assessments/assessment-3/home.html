@@ -15,10 +15,19 @@
 	</nav>
 
 	<content>
-		<h1>Welcome to this little website.</h1>
+		<h1 class="title">Welcome to Sunny's Digital!</h1>
 		<!-- insert hello world here -->
+		<h2 class="hello-world">Hello World!</h2>
+		<img src="assets/steak.png" id="steak">
 
-		<img src="hackbright.png">
+		<p>The below are Sunny's favorite things:</p>
+
+		<ul>
+			<li>Dogs, Sunny loves dogs - they are adorable.</li>
+			<li>Cats - Sunny loves cats too, so cute in their own way!</li>
+			<li>Food. From all over, a mixture and a blend of cultures.</li>
+			<li>Steak is very good as well, thank you for the inspiration Vinson - YUM!</li>
+		</ul>
 
 		<h2>Contact Us</h2>
 		<form id="contact">
@@ -28,8 +37,35 @@
 			Message:
 			<input type="textarea">
 
-			<input type="submit">
+			How did you hear about us/this website?
+			<table>
+				<tr>
+					<td>
+						<input type="checkbox" id="google" name="google" value="Google">
+					</td>
+					<td>
+						<label for="google"><img src="assets/google.png" alt="Google" class="checkbox-google"> Google</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" id="a-friend" name="a-friend" value="A Friend">
+					</td>
+					<td>
+						<label for="a-friend"><img src="assets/a-friend.png" alt="A Friend" class="checkbox-a-friend"> A Friend</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" id="other" name="other" value="Other">
+					</td>
+					<td>
+						<label for="other"><img src="assets/other.png" alt="Other" class="checkbox-other"> Other</label>
+					</td>
+				</tr>
+			</table>
 
+			<input type="submit">
 
 		</form>
 
