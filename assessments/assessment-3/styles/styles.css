@@ -46,18 +46,18 @@ img {
 }
 
 .checkbox-google {
-    width: 20px;
-	height: 20px;
+    width: 15px;
+	height: 15px;
 }
 
 .checkbox-a-friend {
-    width: 10px;
-	height: 10px;
+    width: 15px;
+	height: 15px;
 }
 
 .checkbox-other {
-    width: 20px;
-	height: 20px;
+    width: 15px;
+	height: 15px;
 }
 
 .image-container {
@@ -80,4 +80,33 @@ img {
 .centered-text {
 	text-align: center;
 	font-size: smaller;
+}
+
+.large-yellow-button {
+  font-size: 16px;
+  padding: 10px 10px;
+  background-color: yellow;
+  border: none;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.left-image-container {
+	float: left;
+}
+
+.left-image-container img {
+	margin-left: 12px;
+	margin-bottom: 12px;
+	max-width: 200px;
+}
+
+.right-image-container {
+	float: right;
+}
+
+.right-image-container img {
+	margin-right: 12px;
+	margin-bottom: 12px;
+	max-width: 200px;
 }
