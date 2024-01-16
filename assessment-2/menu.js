@@ -110,7 +110,7 @@ const foodArr = [
         price: "10",
         popularity: "4",
         rating: "4",
-        tags:["spanish", "dessert", "vegetarian"]
+        tags:["hispanic", "dessert", "vegetarian"]
     },
     {
         name:"Steak",
@@ -132,6 +132,20 @@ const foodArr = [
         popularity: "4",
         rating: "3",
         tags:["natural", "seafood", "pescetarian"]
+    },
+    {
+        name:"Steamed Yam's",
+        price: "8",
+        popularity: "4",
+        rating: "2.5",
+        tags:["natural", "vegetarian"]
+    },
+    {
+        name:"Chicken Fajita's",
+        price: "10",
+        popularity: "4",
+        rating: "3",
+        tags:["natural", "vegetarian", "hispanic"]
     },
 ]
 
