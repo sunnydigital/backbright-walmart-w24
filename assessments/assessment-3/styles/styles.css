@@ -76,3 +76,8 @@ img {
 .table-caption {
 	font-weight: 600;
 }
+
+.centered-text {
+	text-align: center;
+	font-size: smaller;
+}
