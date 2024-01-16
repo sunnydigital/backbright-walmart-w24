@@ -1,4 +1,4 @@
-body {
+ body {
   background: #ddd;
   margin: 1rem;
   padding: 1rem;
@@ -58,4 +58,16 @@ img {
 .checkbox-other {
     width: 20px;
 	height: 20px;
+}
+
+.image-container {
+	float: right;
+}
+
+.image-container img {
+	max-width: 200px;
+}
+
+.justified {
+	text-align:justify;
 }
