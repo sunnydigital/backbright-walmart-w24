@@ -110,3 +110,7 @@ img {
 	margin-bottom: 12px;
 	max-width: 200px;
 }
+
+.unordered-justified {
+	text-align: justify;
+}
