@@ -1,0 +1,30 @@
+Part 1
+1. https://swapi.dev/api/people/4/
+2. https://swapi.dev/api/planets/2/
+3. https://swapi.dev/api/starships/10/
+4. https://swapi.dev/api/species/2/
+
+5a. https://swapi.dev/api/films/1/
+5b. https://swapi.dev/api/films/2/
+5c. https://swapi.dev/api/films/3/
+5d. https://swapi.dev/api/films/4/
+5e. https://swapi.dev/api/films/5/
+5f. https://swapi.dev/api/films/6/
+
+6. https://swapi.dev/api/starships/?search=millennium
+
+Part 2
+1. The posts on the website, i.e. the webpages themselves
+2. JSON data types
+3. https://practiceapi.devmountain.dcom/api/delete/id?=555
+4a. 20: Returns an array of filtered posts
+4b. 409: Request query is missing required text property
+
+5. https://practiceapi.devmountain.com/api/posts
+6. https://practiceapi.devmountain.com/api/posts?id=1890
+7. https://practiceapi.devmountain.com/api/posts/filter?text=blue
+8. application/json, utf-8
+9. Request was missing req.query.id or req.body.text
+10. Cannot get /api/posts/query, it is the endpoint to get all posts not filter.
+
+Part 3
