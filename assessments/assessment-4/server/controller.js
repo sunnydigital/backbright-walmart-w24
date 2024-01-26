@@ -35,10 +35,10 @@ module.exports = {
             "Kyogre",
             "Dialga",
             "Palkia",
-            "Giratina",
             "Arceus",
             "Lucario",
-            "Milotic"
+            "Milotic",
+            "Togekiss"
         ]
 
         let randomIndex = Math.floor(Math.random() * pokemon.length)
