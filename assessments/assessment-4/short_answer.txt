@@ -7,7 +7,7 @@ client sends requests, and the server sends responses
 -------------------
 2) What do we mean by a "route" on a server?
 
-The specific tiered-structure to access a certain page or function of a website, 
+The specific hierarichal-structure to access a certain page or function of a website, 
 allowing for various parameters that pass data in and out.
 
 -------------------
