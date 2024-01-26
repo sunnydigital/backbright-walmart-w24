@@ -3,7 +3,7 @@ const cors = require('cors');
 
 const app = express();
 
-const { signup, login } = require('userControllerUnsecure')
+const { signup, login } = require('userController')
 
 app.use(express.json());
 app.use(cors());
