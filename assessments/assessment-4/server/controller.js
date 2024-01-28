@@ -30,6 +30,7 @@ module.exports = {
         const pokemon = [
             "Charizard",
             "Pikachu",
+            "Mewtwo",
             "Rayquaza",
             "Groudon",
             "Kyogre",
