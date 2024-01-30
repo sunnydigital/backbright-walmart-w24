@@ -20,7 +20,7 @@ function submitHandler(e) {
 
     let bodyObj = {
         title: title.value,
-        rating: rating.value, 
+        rating: rating.value,
         imageURL: imageURL.value
     }
 
