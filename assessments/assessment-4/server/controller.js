@@ -27,25 +27,16 @@ module.exports = {
     },
 
     getPokemon : (req, res) => {
-        const pokemon = [
-            "Charizard",
-            "Pikachu",
-            "Mewtwo",
-            "Rayquaza",
-            "Groudon",
-            "Kyogre",
-            "Dialga",
-            "Palkia",
-            "Arceus",
-            "Lucario",
-            "Milotic",
-            "Togekiss"
-        ]
+        const randPokeInt = Math.floor(Math.random() * 1200)
 
-        let randomIndex = Math.floor(Math.random() * pokemon.length)
-        let randomPokemon = pokemon[randomIndex]
+        pokeURL = `https://pokeapi.co/api/v2/pokemon/${randPokeInt}/`
 
-        res.status(200).send(randomPokemon)
+        axios.get(pokeURL)
+        .then(res1 => {
+            const { name } = res1;
+            res.status(200).send(name)
+        })
+
     },
 
     getTime : (req, res) => {
