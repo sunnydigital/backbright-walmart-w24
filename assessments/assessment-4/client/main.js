@@ -15,32 +15,32 @@ const getCompliment = () => {
 const getFortune = () => {
     axios.get("http://localhost:4000/api/fortune/")
         .then(res => {
-            const fortune = res.fortune;
-            alert(fortune)
+            const data = res.data;
+            alert(data)
         })
 }
 
 const getPokemon = () => {
     axios.get("http://localhost:4000/api/pokemon")
         .then(res => {
-            const pokemon = res.pokemon;
-            alert(pokemon)
+            const data = res.data;
+            alert(data)
         })
 }
 
 const getTime = () => {
     axios.get("http://localhost:4000/api/time")
         .then(res => {
-            const time = res.time;
-            alert(`The time is ${time}`)
+            const data = res.data;
+            alert(`The time is ${data}`)
         })
 }
 
 const getDayOfWeek = () => {
     axios.get("http://localhost:4000/api/date")
         .then(res => {
-            const date = res.date;
-            alert(`The date is ${date}`)
+            const data = res.data;
+            alert(`The date is ${data}`)
         })
 }
 

@@ -49,15 +49,18 @@ module.exports = {
     },
 
     getTime : (req, res) => {
-        const d = new Date()
-        let time = d.getTime()
+        const d = new Date();
+        
+        let hours = d.getHours();
+        let minutes = d.getMinutes();
+        let seconds = d.getSeconds();
 
-        res.status(200).send(time)
+        res.status(200).send(`${hours}:${minutes}:${seconds}`);
     },
 
     getDayOfWeek : (req, res) => {
-        const d = new Date()
-        let day = d.getDay()
+        const d = new Date();
+        let day = d.getDay();
 
         dayOfTheWeek = [
             "Sunday",
