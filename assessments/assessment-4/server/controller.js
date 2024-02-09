@@ -27,16 +27,17 @@ module.exports = {
     },
 
     getPokemon : (req, res) => {
+        const axios = require('axios'); 
+
         const randPokeInt = Math.floor(Math.random() * 1200)
 
         pokeURL = `https://pokeapi.co/api/v2/pokemon/${randPokeInt}/`
 
         axios.get(pokeURL)
         .then(res1 => {
-            const { name } = res1;
+            const { name } = res1.data.forms[0];
             res.status(200).send(name)
         })
-
     },
 
     getTime : (req, res) => {
