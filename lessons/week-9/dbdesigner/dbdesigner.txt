@@ -1,0 +1,37 @@
+Brainstorming,
+Step 2
+---
+
+users
+Information about the users, i.e. name, address, email, etc
+
+recipes
+Information on individual recipes, with name etc.
+
+ingredients
+Information on the individual items for ingredients, each row will be a single ingredient
+
+instructions
+Information on individual items, each row will be a single 
+
+grocery list
+Information on all grocery items, with rows representing 
+
+Step 3
+------
+
+Relationships
+-------------
+
+
+one-to-one
+----------
+
+
+one-to-many
+-----------
+
+
+many-to-many
+------------
+
