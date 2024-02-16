@@ -71,6 +71,12 @@ module.exports = {
             INSERT INTO cities (name, rating, country_id)
             VALUES ('Los Angeles', '7', 1);
 
+            INSERT INTO cities (name, rating, country_id)
+            VALUES ('Palo Alto', '7', 1);
+
+            INSERT INTO cities (name, rating, country_id)
+            VALUES ('San Francisco', '7', 1);
+
             create table countries (
                 country_id serial primary key,
                 name varchar
