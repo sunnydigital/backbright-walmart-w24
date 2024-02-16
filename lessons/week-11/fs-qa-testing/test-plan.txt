@@ -1,0 +1,10 @@
+- 2 high-level (broad) tests
+    - Tests the submissions are entered correctly
+    - Tests drop-downs work as intended
+
+- 2 low-level (specific) tests
+    - Test whether each warrant ID has right format of number/strings
+    - Test whether the offense makes sense
+
+- 1 smoke/sanity test
+    - Items in the fill-in space allows to be sent in
