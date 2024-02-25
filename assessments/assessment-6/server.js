@@ -4,7 +4,7 @@ const shuffle = require("./src/shuffle");
 const Rollbar = require('rollbar');
 
 const rollbar = new Rollbar({
-  accessToken: 'ac7359bdcf51421b9738b02013f1b18b',
+  accessToken: '',
   captureUncaught: true,
   captureUnhandledRejections: true
 })
