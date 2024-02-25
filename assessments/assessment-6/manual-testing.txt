@@ -1,3 +1,16 @@
-1. Test Case - Click the "See All Bots" button
-2. The "See All Bots" button does not work
-3. Even when dueling and winning, a loss is counted
+1. Test Case - Check Button Clicks
+    1) Boot up the application to check whether or not the buttons of the application work
+    2) Boot up application and click the "See All Bots" button, determine what happens in the app/logs
+    3) Determine in the logs that nothing out of the ordinary occurs, or if an error is thrown in the logs
+2. Bug Report - The "See All Bots" button does not work
+    1) The "See All Bots" Button does not show any information, rather triggers an error
+    2) Use the command npm start, and access the game. Note that the button "See All Bots" does not work
+    3) A screen destailain all of the available bots in the game
+    4) Nothing shows up, and an error in the console
+    5) Windows 11, VSCode with Github Desktop
+3. Bug Report - Even when dueling and winning, a loss is counted
+    1) A loss is counted even when the user wins the duel against the CPU
+    2) Use the command npm start, and access the game. Select the two bots to use. Win against the CPU.
+    3) The expected result is to have the win be tallied for the user
+    4) The win is tallied for the CPU, and is counted as a loss
+    5) Windows 11, VSCode with Github Desktop
