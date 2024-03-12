@@ -40,23 +40,23 @@ const mediumArray = getSizedArray(1000);
 const largeArray = getSizedArray(10000);
 const extraLargeArray = getSizedArray(100000);
 
-
+let selectedArray = largeArray
 
 // How long does it take to double every number in a given 
 // array? 
 
 // Try it with first function
 perf.start();                     // Starts timer
-doublerAppend(extraLargeArray);
+doublerAppend(selectedArray);
 let resultsAppend = perf.stop();  // Stops timer and save time results
 
 
 // Try it with second function
 perf.start();
-doublerInsert(extraLargeArray);
+doublerInsert(selectedArray);
 let resultsInsert = perf.stop();
 
 
-console.log('Results for the extraLargeArray');
+console.log(`Results for the selected array`);
 console.log("unshift", resultsInsert.preciseWords);
 console.log("push", resultsAppend.preciseWords);

@@ -3,25 +3,32 @@ Timing Information:
 
 Extra Large Array
 -----------------
-Time to run code with push():
-Time to run code with unshift():
+Time to run code with push(): 2.9837 ms
+Time to run code with unshift(): 1.181579 s
 
 Large Array
 -----------
-Time to run code with push():
-Time to run code with unshift():
+Time to run code with push(): 12.1479 ms
+Time to run code with unshift(): 887 μs
 
 Medium Array
 ------------
-Time to run code with push():
-Time to run code with unshift():
+Time to run code with push(): 165.5 μs
+Time to run code with unshift(): 247.6 μs
 
 Small Array
 -----------
-Time to run code with push():
-Time to run code with unshift():
+Time to run code with push(): 114.4 μs
+Time to run code with unshift(): 60.7 μs
 
 Tiny Array
 ----------
-Time to run code with push():
-Time to run code with unshift():
+Time to run code with push(): 43.7 μs
+Time to run code with unshift(): 97.8 μs
+
+Paragraph
+---------
+
+At a glance, it is easy to see that unshift() started at around 100 μs but ended up around 1 s. In contrast, push() started at around 50 μs but ended up at around 3 ms. From a similar order of magnitude, the unshift() function ended three orders of magnitude higher than the push() function: the unshift() function scales worse than push()
+
+unshift() is slower (scales worse) than push() due to it needing another O(N) to move back all the shifted elements
