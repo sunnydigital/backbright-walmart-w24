@@ -1,3 +1,4 @@
+// O(Nlog(N))
 addToZero = (arr) => {
     zeroLst = []
     for (let ele of arr) {
@@ -9,6 +10,7 @@ addToZero = (arr) => {
     return false;
 }
 
+// O(Nlog(N))
 uniqueChars = (word) => {
     usedLetters = [];
     for(let char of word) {
@@ -20,6 +22,7 @@ uniqueChars = (word) => {
     return true;
 }
 
+// O(Nlog(N))
 isPangram = (sentence) => {
     alphabet = "abcdefghijklmnopqrstuvwxyz"
     sentence = sentence.toLowerCase()
@@ -31,6 +34,7 @@ isPangram = (sentence) => {
     return true;
 }
 
+// O(Nlog(N))
 findLongestWord = (arr) => {
     length = 0;
     for (let word in arr) {
